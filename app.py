@@ -13,3 +13,6 @@ class User:
         self.age = age
         self.gender = gender
     
+    def show_details(self):
+        pass
+    
