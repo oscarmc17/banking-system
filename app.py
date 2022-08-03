@@ -14,5 +14,13 @@ class User:
         self.gender = gender
     
     def show_details(self):
-        pass
+        print("Personal Details")
+        print("")
+        print("Name ", self.name)
+        print("Age ", self.age)
+        print("Gender ", self.gender)
+
+person = User("Oscar", 27, "Male")
+
+print(person.show_details())
     
