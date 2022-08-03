@@ -6,6 +6,10 @@
 # Stores details about the amount 
 # Allows for deposits, withdraws, view_balance
 
+# Parent Class
+
+
+
 class User:
 
     def __init__(self, name, age, gender):
@@ -22,5 +26,10 @@ class User:
 
 person = User("Oscar", 27, "Male")
 
-print(person.show_details())
+person.show_details()
+
+
+class Bank(User):
+    pass
+
     
