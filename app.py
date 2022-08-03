@@ -32,4 +32,8 @@ person.show_details()
 class Bank(User):
     pass
 
+class Banker(User):
+    pass
+
+
     
