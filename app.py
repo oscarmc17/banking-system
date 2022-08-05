@@ -41,8 +41,12 @@ class Bank(User):
             self.balance = self.balance - self.amount
             print("Account balance has been updated: $", self.balance)
 
+    def view_balance(self):
+        self.show_details()
+        print("Account Balance: $", self.balance)
+
 
 person = Bank('Oscar', 28, 'Male')
-person.deposit(10)
-person.withdraw(5)
-person.withdraw(300)
+person.deposit(1000)
+person.withdraw(900)
+person.view_balance()
