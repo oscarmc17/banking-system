@@ -7,9 +7,6 @@
 # Allows for deposits, withdraws, view_balance
 
 # Parent Class
-
-
-
 class User:
 
     def __init__(self, name, age, gender):
@@ -28,7 +25,7 @@ person = User("Oscar", 27, "Male")
 
 person.show_details()
 
-
+# Child Class
 class Bank(User):
-    pass
-    
+    def __init__(self, name, age, gender):
+        super().__init__(name, age, gender)
