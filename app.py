@@ -3,7 +3,7 @@
 # Has a function to show user details
 # Child Class : Bank
 # Stores details about the account balance
-# Stores details about the amount 
+# Stores details about the amount
 # Allows for deposits, withdraws, view_balance
 
 # Parent Class
@@ -13,7 +13,7 @@ class User:
         self.name = name
         self.age = age
         self.gender = gender
-    
+
     def show_details(self):
         print("Personal Details")
         print("")
@@ -21,11 +21,13 @@ class User:
         print("Age ", self.age)
         print("Gender ", self.gender)
 
-person = User("Oscar", 27, "Male")
-
-person.show_details()
 
 # Child Class
 class Bank(User):
     def __init__(self, name, age, gender):
         super().__init__(name, age, gender)
+        self.balance = 0
+        
+    def deposit(self, amount):
+        self.balance = self.balance + amount
+        print ("Account balance has been udpated $: ", self.balance)
